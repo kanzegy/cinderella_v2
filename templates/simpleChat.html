@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>simple Chat</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="{{ url_for('static', filename='js/jquery-v3.6.4.min.js') }}"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/socket.io.js') }}"></script>
+
+    </head>
+
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var socket = io.connect("ws://localhost:5000");
+            
+            socket.on("connect", function(){
+                socket.send("User connected!");
+            });
+
+            socket.on("chat", function(data){
+                console.log(data);
+                $("#messages").append( $("<p>").text(data) );
+            });
+            
+            $("#sendBtn").on("click", function(){
+                socket.send( $("#username").val() + ': ' + $("#message").val());
+                $("#message").val("");
+            })
+            
+        })
+    </script>
+    <div id = "messages">
+
+    </div>
+
+    <input type="text" id="username" placeholder="usr name">
+    <input type="text" id="message" placeholder="message">
+    <button id="sendBtn">Send</button>
+</body>
+</html>

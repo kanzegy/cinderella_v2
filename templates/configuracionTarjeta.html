@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Configuracion de tarjetas</title>
+  <!-- Agregamos la hoja de estilos de Bootstrap -->
+  <script src="{{ url_for('static', filename='js/jquery-v3.6.4.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <style>
+    input {
+    background-color: #caecff !important;
+}
+  </style>
+</head>
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/configAlarmas">Configuracion de alarmas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Conexiones">Tarjetas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/AgregarTarjeta">Agregar nueva tarjeta</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-exclamation-lg"></i> Alarmas 
+          </a>
+          <ul class="dropdown-menu">
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<body>
+  <h1>Agregar Tarjeta</h1>
+<form action="{{ url_for('GuardaTarjeta') }}" method="post">
+    <input type="hidden" name="_id" value="0">
+    <div class="form-group row">
+      <div class="col-6">
+        <label for="alias">Alias:</label>
+        <input type="text" class="form-control" id="alias"  name="alias" placeholder="Ingresa el alias" required>
+      </div>
+      <div class="col-6">
+        <label for="alias">Codigo #:</label>
+        <input type="text" class="form-control" id="codigo"  name="codigo" placeholder="Ingresa el codigo que se enviara por el puerto serial" required>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-12 row">
+        <label for="alias">Ips para enviar Traps</label>
+        <div class="col-3"><input type="text" class="form-control" id="trapsIp"  name="trapsIp" placeholder="Ip Trap 1"></div>
+        <div class="col-3"><input type="text" class="form-control" id="trapsIp"  name="trapsIp" placeholder="Ip Trap 2"></div>
+        <div class="col-3"><input type="text" class="form-control" id="trapsIp"  name="trapsIp" placeholder="Ip Trap 3"></div>
+        <div class="col-3"><input type="text" class="form-control" id="trapsIp"  name="trapsIp" placeholder="Ip Trap 4"></div>
+      </div>
+    </div>
+      
+        <div class="form-group">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>epgID</th>
+          <th>usado</th>
+          <th>epgLabel</th>
+          <th>convVolts</th>
+          <th>offset</th>
+          <th>slope</th>
+          <th>tipo</th>
+          <th>unidad</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        </tbody>
+      </table>
+      
+      <button type="button" id="agregar-fila">Agregar Alarma</button>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+  </div>
+  
+  </form>
+  <script>
+    $(document).ready(function() {
+      function addNewRow(){
+        var nuevaFila = 
+        '<tr>' +
+            '<td><input type="number" class="form-control" id="epgID"  name="alarmas[epgID]" placeholder="Ingresa el epgID" required></td>' +
+            '<td><input type="text" class="form-control" id="usado" name="alarmas[usado]" placeholder="Ingresa usado" value="si" required></td>' +
+            '<td><input type="text" class="form-control" id="epgLabel" name="alarmas[epgLabel]" placeholder="Ingresa epgLabel" required></td>' +
+            '<td><input type="number" class="form-control" id="convVolts" name="alarmas[convVolts]" placeholder="Ingresa convVolts" value="10" required></td>' +
+            '<td><input type="number" class="form-control" id="offset" name="alarmas[offset]" placeholder="Ingresa offset" value="0" required></td>' +
+            '<td><input type="number" class="form-control" id="slope" name="alarmas[slope]" placeholder="Ingresa slope" value="1" required></td>' +
+            '<td><input type="text" class="form-control" id="tipo" name="alarmas[tipo]" placeholder="Ingresa tipo" value="DIG" required></td>' +
+            '<td><input type="text" class="form-control" id="unidad" name="alarmas[unidad]" placeholder="Ingresa unidad" value="V" required></td>' +
+            '</tr>';
+
+        $('table tbody').append(nuevaFila);
+      }
+      $('#agregar-fila').click(function() {
+        addNewRow();
+      });
+
+      addNewRow();
+    });
+  </script>
+</body>

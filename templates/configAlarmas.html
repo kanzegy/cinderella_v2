@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Configuracion de alarmas</title>
+        <!-- Agregamos la hoja de estilos de Bootstrap -->
+        <script src="{{ url_for('static', filename='js/jquery-v3.6.4.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <style>
+            .bodybody{
+              font-size: small;
+            }
+            input{
+              font-size: small !important;
+            }
+            .input-canged{
+                background-color: lightgreen;
+            }
+          </style>
+      </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/configAlarmas">Configuracion de alarmas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Conexiones">Tarjetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/AgregarTarjeta">Agregar nueva tarjeta</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-exclamation-lg"></i> Alarmas
+                    </a>
+                    <ul class="dropdown-menu" id="ul-alertas" style="width: max-content;">
+                    <li id="li-alertas-tabla">
+                        <table id="tabla-alertas" class="table bodybody">
+                        <tbody>
+                        </tbody>
+                        </table>
+                    </li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+      <div class="bodybody">
+        <table id="tablaObjetos" class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th style="display: none;">_id</th>
+                <th>Clave</th>
+                <th>Nombre Alarma</th>
+                <th>Usado</th>
+                <th>Texto Largo</th>
+                <th>Límite</th>
+                <th>Lógica</th>
+                <th>Oid Set</th>
+                <th>Oid Clear</th>
+                <th>Origen</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+      </div>
+    </body>
+</html>
+  <script>
+    function forEachObj(obj, action){ 
+        Object.keys(obj).forEach(key => {
+            action(key, obj[key]);
+        });
+    };
+    var configInputs = {
+        _id: {type: "text", tdStyle: "display:none;", title : "_id"},
+        clave: {type: "number", tdStyle: "", title : "Clave"},
+        nombreAlarma: {type: "text", tdStyle: "", title : "Nombre Alarma"},
+        usado:  {type: "text", tdStyle: "", title : "Usado"},
+        texto_largo:  {type: "text", tdStyle: "", title : "Texto Largo"},
+        limite:  {type: "number", tdStyle: "", title : "Límite"},
+        logica:  {type: "text", tdStyle: "", title : "Lógica"},
+        oid_set:  {type: "text", tdStyle: "", title : "Oid Set"},
+        oid_clear:  {type: "text", tdStyle: "", title : "Oid Clear"},
+        origen:  {type: "text", tdStyle: "", title : "Origen"},
+    }
+      var configAlarmas =  JSON.parse('{{configAlarmas}}'.replaceAll("&#39;", '"'));
+
+    $(document).ready(function() {
+
+
+        var tablaBody = $('#tablaObjetos tbody');
+
+        configAlarmas.forEach(function(objeto) {
+            var fila = $('<tr>');
+                forEachObj(configInputs,function(key, conf){
+                    fila.append('<td style="'+conf.tdStyle+'"><input data-key="' + key + '" data-prevalue="'+objeto[key] +'" class="form-control" type="'+conf.type+'" value="' + objeto[key] + '"></td>');
+                });
+                fila.append(
+                    '<td>'+
+                        '<div class="btn-group" role="group">'+
+                            '<button type="button" class="btn btn-sm btn-danger revertBtn">Revertir</button>'+
+                            '<button type="button" class="btn btn-sm btn-success saveBtn" >Guardar</button>'+
+                        '</div>'+
+                    '</td>');
+
+            tablaBody.append(fila);
+        });
+
+    $('.revertBtn').on('click', function() {
+        var fila = $(this).closest('tr');
+
+        fila.find('input').each(function() {
+          $(this).val($(this).data("prevalue"));
+          $(this).removeClass('input-canged');
+        });
+    });
+
+    $('.saveBtn').on('click', function() {
+        var btn  = $(this);
+        btn.toggleClass("btn-success");
+        btn.attr("disabled", "true");
+
+        var fila = btn.closest('tr');
+        var obj2Save = {};
+
+        fila.find('input').each(function() {
+            var valor = $(this).val();
+            var key = $(this).data("key");
+            obj2Save[key] = valor;
+        });
+
+        $.post("guardaConfAlarma", obj2Save, function(data, status){
+            btn.toggleClass("btn-success");
+            btn.removeAttr("disabled");
+            
+            fila.find('input').each(function() {
+                var valor = $(this).val();
+                $(this).data("prevalue", valor);
+                $(this).removeClass('input-canged');
+            });
+        });
+    });
+
+    $('input').on('input', function() {
+        var valorActual = $(this).val();
+        var valorPrevio = $(this).data('prevalue');
+
+        if (valorActual != valorPrevio) {
+          $(this).addClass('input-canged');
+        } else {
+          $(this).removeClass('input-canged');
+        }
+      });
+
+        
+});
+
+</script>
