@@ -1,0 +1,2601 @@
+[{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20b9d"
+  },
+  "nombreAlarma": "A_PTA_AB1",
+  "usado": "si",
+  "texto_largo": "PUERTA ABIERTA 1",
+  "limite": "250",
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.101",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.102",
+  "origen": "E_SE_PTA1",
+  "clave": "0"
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20b9e"
+  },
+  "nombreAlarma": "A_DET_IMP1",
+  "usado": "si",
+  "texto_largo": "DET IMPACTO 1",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.103",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.104",
+  "origen": "E_SE_IMP1",
+  "clave": 1
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20b9f"
+  },
+  "nombreAlarma": "A_DET_MVT1",
+  "usado": "si",
+  "texto_largo": "DET DE MOVIMIENTO 1",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.105",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.106",
+  "origen": "E_DET_MVT1",
+  "clave": 2
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20ba0"
+  },
+  "nombreAlarma": "A_DET_HMO",
+  "usado": "si",
+  "texto_largo": "DET DE INCENDIO",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.107",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.108",
+  "origen": "E_DET_HMO",
+  "clave": 3
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20ba1"
+  },
+  "nombreAlarma": "A_ALM_EXT",
+  "usado": "si",
+  "texto_largo": "FALLA EN SIST EXTINCION",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.109",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.110",
+  "origen": "E_ALM_EXT",
+  "clave": 4
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20ba2"
+  },
+  "nombreAlarma": "A_DES_EXT",
+  "usado": "si",
+  "texto_largo": "DESGARGA AGENTE EXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.111",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.112",
+  "origen": "E_DES_EXT",
+  "clave": 5
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20ba3"
+  },
+  "nombreAlarma": "A_VES_FAL",
+  "usado": "si",
+  "texto_largo": "FALLA SIST VESDA",
+  "limite": 65,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.113",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.114",
+  "origen": "E_VES_FAL",
+  "clave": 6
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20ba4"
+  },
+  "nombreAlarma": "A_VES_DTP",
+  "usado": "si",
+  "texto_largo": "DET PARTICULAS VESDA",
+  "limite": 30,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.115",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.116",
+  "origen": "E_VES_DTP",
+  "clave": 7
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20ba5"
+  },
+  "nombreAlarma": "A_VES_INC",
+  "usado": "si",
+  "texto_largo": "DET INCENDIO VESDA",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.117",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.118",
+  "origen": "E_VES_INC",
+  "clave": 8
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20ba6"
+  },
+  "nombreAlarma": "A_F_AA1",
+  "usado": "si",
+  "texto_largo": "FALLA AA1",
+  "limite": 250,
+  "logica": "NA",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.119",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.120",
+  "origen": "E_AEX_AA1",
+  "clave": 9
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20ba7"
+  },
+  "nombreAlarma": "A_F_AA2",
+  "usado": "si",
+  "texto_largo": "FALLA AA2",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.121",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.122",
+  "origen": "E_AEX_AA2",
+  "clave": 10
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20ba8"
+  },
+  "nombreAlarma": "A_F_AA3",
+  "usado": "si",
+  "texto_largo": "FALLA AA3",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.123",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.124",
+  "origen": "E_AEX_AA3",
+  "clave": 11
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20ba9"
+  },
+  "nombreAlarma": "A_F_AA4",
+  "usado": "si",
+  "texto_largo": "FALLA AA4",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.125",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.126",
+  "origen": "E_AEX_AA4",
+  "clave": 12
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20baa"
+  },
+  "nombreAlarma": "A_AT_ST1",
+  "usado": "si",
+  "texto_largo": "ALTA TEMP S1",
+  "limite": 25,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.127",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.128",
+  "origen": "E_SE_TMP1",
+  "clave": 13
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bab"
+  },
+  "nombreAlarma": "A_BJ_ST1",
+  "usado": "si",
+  "texto_largo": "BAJA TEMP S1",
+  "limite": 12,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.129",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.130",
+  "origen": "E_SE_TMP1",
+  "clave": 14
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bac"
+  },
+  "nombreAlarma": "A_AT_ST2",
+  "usado": "si",
+  "texto_largo": "ALTA TEMP S2",
+  "limite": 25,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.131",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.132",
+  "origen": "E_SE_TMP2",
+  "clave": 15
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bad"
+  },
+  "nombreAlarma": "A_BJ_ST2",
+  "usado": "si",
+  "texto_largo": "ALTA TEMP S2",
+  "limite": 12,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.133",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.134",
+  "origen": "E_SE_TMP2",
+  "clave": 16
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bae"
+  },
+  "nombreAlarma": "A_AT_ST3",
+  "usado": "si",
+  "texto_largo": "ALTA TEMP S3",
+  "limite": 25,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.135",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.136",
+  "origen": "E_SE_TMP3",
+  "clave": 17
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20baf"
+  },
+  "nombreAlarma": "A_BJ_ST3",
+  "usado": "si",
+  "texto_largo": "BAJA TEMP S3",
+  "limite": 12,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.137",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.138",
+  "origen": "E_SE_TMP3",
+  "clave": 18
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bb0"
+  },
+  "nombreAlarma": "A_AT_ST4",
+  "usado": "si",
+  "texto_largo": "ALTA TEMP S4",
+  "limite": 25,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.139",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.140",
+  "origen": "E_SE_TMP4",
+  "clave": 19
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bb1"
+  },
+  "nombreAlarma": "A_BJ_ST4",
+  "usado": "si",
+  "texto_largo": "ALTA TEMP S4",
+  "limite": 12,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.141",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.142",
+  "origen": "E_SE_TMP4",
+  "clave": 20
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bb2"
+  },
+  "nombreAlarma": "A_AT_HMD",
+  "usado": "si",
+  "texto_largo": "ALTA HUM RELATIVA",
+  "limite": 400,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.143",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.144",
+  "origen": "E_SE_HMD",
+  "clave": 21
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bb3"
+  },
+  "nombreAlarma": "A_BJ_HMD",
+  "usado": "si",
+  "texto_largo": "BAJA HUM RELATIVA",
+  "limite": 100,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.145",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.146",
+  "origen": "E_SE_HMD",
+  "clave": 22
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bb4"
+  },
+  "nombreAlarma": "A_FA_HMDR",
+  "usado": "si",
+  "texto_largo": "FALLA HUMIDIFICADOR",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.147",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.148",
+  "origen": "E_FA_HMDR",
+  "clave": 23
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bb5"
+  },
+  "nombreAlarma": "A_SA_AGUA",
+  "usado": "si",
+  "texto_largo": "DET DE AGUA EN CLIMA",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.149",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.150",
+  "origen": "E_SE_AGUA",
+  "clave": 24
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bb6"
+  },
+  "nombreAlarma": "A_ALM_GNDR",
+  "usado": "si",
+  "texto_largo": "FALLA GENERADOR",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.151",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.152",
+  "origen": "E_ALM_GNDR",
+  "clave": 25
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bb7"
+  },
+  "nombreAlarma": "A_GNDR_OPR",
+  "usado": "si",
+  "texto_largo": "GEN EN OPERACIÓN",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.153",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.154",
+  "origen": "E_GNDR_OPR",
+  "clave": 26
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bb8"
+  },
+  "nombreAlarma": "A_GNDR_CRG",
+  "usado": "si",
+  "texto_largo": "CARGA EN GENERADOR",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.155",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.156",
+  "origen": "E_GNDR_CRG",
+  "clave": 27
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bb9"
+  },
+  "nombreAlarma": "A_BJ_NCOM",
+  "usado": "si",
+  "texto_largo": "BAJO NIVEL COMB",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.157",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.158",
+  "origen": "E_SE_NCOM",
+  "clave": 28
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bba"
+  },
+  "nombreAlarma": "A_MB_NCOM",
+  "usado": "si",
+  "texto_largo": "MUY BAJO NIVEL COMB",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.159",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.160",
+  "origen": "E_SE_NCOM",
+  "clave": 29
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bbb"
+  },
+  "nombreAlarma": "A_PTA_AB2",
+  "usado": "si",
+  "texto_largo": "PUERTA ABIERTA 2",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.161",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.162",
+  "origen": "E_SE_PTA2",
+  "clave": 30
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bbc"
+  },
+  "nombreAlarma": "A_DET_IMP2",
+  "usado": "si",
+  "texto_largo": "DET DE IMPACTO 2",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.163",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.164",
+  "origen": "E_SE_IMP2",
+  "clave": 31
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bbd"
+  },
+  "nombreAlarma": "A_DET_MVT2",
+  "usado": "si",
+  "texto_largo": "DET DE MOVIMIENTO 2",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.165",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.166",
+  "origen": "E_DET_MVT2",
+  "clave": 32
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bbe"
+  },
+  "nombreAlarma": "A_BTN_PNC1",
+  "usado": "si",
+  "texto_largo": "BOTON DE PANICO 1",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.167",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.168",
+  "origen": "E_BTN_PNC1",
+  "clave": 33
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bbf"
+  },
+  "nombreAlarma": "A_BTN_PNC2",
+  "usado": "si",
+  "texto_largo": "BOTON DE PANICO 2",
+  "limite": 400,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.169",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.170",
+  "origen": "E_BTN_PNC2",
+  "clave": 34
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bc0"
+  },
+  "nombreAlarma": "A_SA_TMPB",
+  "usado": "si",
+  "texto_largo": "ALTA TEMP SALA BAT",
+  "limite": 100,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.171",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.172",
+  "origen": "E_SE_TMPB",
+  "clave": 35
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bc1"
+  },
+  "nombreAlarma": "A_SA_TMPB",
+  "usado": "si",
+  "texto_largo": "BAJA TEMP SALA BAT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.173",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.174",
+  "origen": "E_SE_TMPB",
+  "clave": 36
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bc2"
+  },
+  "nombreAlarma": "A_SA_SIM",
+  "usado": "si",
+  "texto_largo": "ALARMA SIMETRIA BAT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.175",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.176",
+  "origen": "E_SE_SIM",
+  "clave": 37
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bc3"
+  },
+  "nombreAlarma": "A_FCA_PCD1",
+  "usado": "si",
+  "texto_largo": "FALLA CA EN PLANTA CD1",
+  "limite": 400,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.177",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.178",
+  "origen": "E_FCA_PCD1",
+  "clave": 38
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bc4"
+  },
+  "nombreAlarma": "A_ATV_PCD1",
+  "usado": "si",
+  "texto_largo": "ALTO VOLTAJE PCD1",
+  "limite": 100,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.179",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.180",
+  "origen": "E_VCD_PCD1",
+  "clave": 39
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bc5"
+  },
+  "nombreAlarma": "A_BJV_PCD1",
+  "usado": "si",
+  "texto_largo": "BAJO VOLTAJE PCD1",
+  "limite": 150,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.181",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.182",
+  "origen": "E_VCD_PCD1",
+  "clave": 40
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bc6"
+  },
+  "nombreAlarma": "A_BED_PCD1",
+  "usado": "si",
+  "texto_largo": "BATERIA EN DESC PCD1",
+  "limite": 80,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.183",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.184",
+  "origen": "E_VCD_PCD1",
+  "clave": 41
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bc7"
+  },
+  "nombreAlarma": "A_DBV_PCD1",
+  "usado": "si",
+  "texto_largo": "DESC BAJO VOLTAJE PCD1",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.185",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.186",
+  "origen": "E_VCD_PCD1",
+  "clave": 42
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bc8"
+  },
+  "nombreAlarma": "A_ALM_REC1",
+  "usado": "si",
+  "texto_largo": "FALLA RECTIFICADOR PCD1",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.187",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.188",
+  "origen": "E_ALM_REC1",
+  "clave": 43
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bc9"
+  },
+  "nombreAlarma": "A_ALM_INT1",
+  "usado": "si",
+  "texto_largo": "INTERRUPTOR ABIERTO PCD1",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.189",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.190",
+  "origen": "E_ALM_INT1",
+  "clave": 44
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bca"
+  },
+  "nombreAlarma": "A_CTA_PCD1",
+  "usado": "si",
+  "texto_largo": "ALTA CORRIENTE PCD1",
+  "limite": 400,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.191",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.192",
+  "origen": "E_CTE_PCD1",
+  "clave": 45
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bcb"
+  },
+  "nombreAlarma": "A_FCA_PCD2",
+  "usado": "si",
+  "texto_largo": "FALLA CA EN PLANTA CD2",
+  "limite": 100,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.193",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.194",
+  "origen": "E_FCA_PCD2",
+  "clave": 46
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bcc"
+  },
+  "nombreAlarma": "A_ATV_PCD2",
+  "usado": "si",
+  "texto_largo": "ALTO VOLTAJE PCD2",
+  "limite": 150,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.195",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.196",
+  "origen": "E_VCD_PCD2",
+  "clave": 47
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bcd"
+  },
+  "nombreAlarma": "A_BJV_PCD2",
+  "usado": "si",
+  "texto_largo": "BAJO VOLTAJE PCD2",
+  "limite": 80,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.197",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.198",
+  "origen": "E_VCD_PCD2",
+  "clave": 48
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bce"
+  },
+  "nombreAlarma": "A_BED_PCD2",
+  "usado": "si",
+  "texto_largo": "BATERIA EN DESC PCD2",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.199",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.200",
+  "origen": "E_VCD_PCD2",
+  "clave": 49
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bcf"
+  },
+  "nombreAlarma": "A_DBV_PCD2",
+  "usado": "si",
+  "texto_largo": "DESC BAJO VOLTAJE PCD2",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.201",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.202",
+  "origen": "E_VCD_PCD2",
+  "clave": 50
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bd0"
+  },
+  "nombreAlarma": "A_ALM_REC2",
+  "usado": "si",
+  "texto_largo": "FALLA RECTIFICADOR PCD2",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.203",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.204",
+  "origen": "E_ALM_REC2",
+  "clave": 51
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bd1"
+  },
+  "nombreAlarma": "A_ALM_INT2",
+  "usado": "si",
+  "texto_largo": "INTERRUPTOR ABIERTO PCD2",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.205",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.206",
+  "origen": "E_ALM_INT2",
+  "clave": 52
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bd2"
+  },
+  "nombreAlarma": "A_CTA_PCD2",
+  "usado": "si",
+  "texto_largo": "ALTA CORRIENTE PCD2",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.207",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.208",
+  "origen": "E_CTE_PCD2",
+  "clave": 53
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bd3"
+  },
+  "nombreAlarma": "A_INV_ALM",
+  "usado": "si",
+  "texto_largo": "ALARMA INVERSOR",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.209",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.210",
+  "origen": "E_INV_ALM",
+  "clave": 54
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bd4"
+  },
+  "nombreAlarma": "A_INV_TRN",
+  "usado": "si",
+  "texto_largo": "INVERSOR EN TRANSFERENCIA",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.211",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.212",
+  "origen": "E_INV_TRN",
+  "clave": 55
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bd5"
+  },
+  "nombreAlarma": "A_UPS_ALM",
+  "usado": "si",
+  "texto_largo": "ALARMA EN UPS",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.213",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.214",
+  "origen": "E_UPS_ALM",
+  "clave": 56
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bd6"
+  },
+  "nombreAlarma": "A_UPS_TRN",
+  "usado": "si",
+  "texto_largo": "UPS EN TRANSFERENCIA",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.215",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.216",
+  "origen": "E_UPS_TRN",
+  "clave": 57
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bd7"
+  },
+  "nombreAlarma": "A_UPS_BAT",
+  "usado": "si",
+  "texto_largo": "UPS EN BATERIA",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.217",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.218",
+  "origen": "E_UPS_BAT",
+  "clave": 58
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bd8"
+  },
+  "nombreAlarma": "A_UPS_ACF",
+  "usado": "si",
+  "texto_largo": "FALLA CA ENTRADA EN UPS",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.219",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.220",
+  "origen": "E_UPS_ACF",
+  "clave": 59
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bd9"
+  },
+  "nombreAlarma": "A_FST_CAA",
+  "usado": "si",
+  "texto_largo": "FALLA SENSOR CTL AA",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.221",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.222",
+  "origen": "E_FST_CAA",
+  "clave": 60
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bda"
+  },
+  "nombreAlarma": "A_ALM_GUS",
+  "usado": "si",
+  "texto_largo": "ALARMA USUARIO CTL A/A",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.223",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.224",
+  "origen": "E_ALM_GUS",
+  "clave": 61
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bdb"
+  },
+  "nombreAlarma": "A_STP_INC",
+  "usado": "si",
+  "texto_largo": "PARO DET DE INCENDIO",
+  "limite": 140,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.225",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.226",
+  "origen": "E_STP_INC",
+  "clave": 62
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bdc"
+  },
+  "nombreAlarma": "A_ALM_SIS",
+  "usado": "si",
+  "texto_largo": "ALARMA EN CTL AA",
+  "limite": 100,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.227",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.228",
+  "origen": "E_ALM_SIS",
+  "clave": 63
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bdd"
+  },
+  "nombreAlarma": "A_AV_CA1",
+  "usado": "si",
+  "texto_largo": "ALTO VOLTAJE CA FASE 1",
+  "limite": 62,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.229",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.230",
+  "origen": "E_SE_VCA1",
+  "clave": 64
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bde"
+  },
+  "nombreAlarma": "A_BV_CA1",
+  "usado": "si",
+  "texto_largo": "BAJO VOLTAJE CA FASE 1",
+  "limite": 58,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.231",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.232",
+  "origen": "E_SE_VCA1",
+  "clave": 65
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bdf"
+  },
+  "nombreAlarma": "A_AF_CA1",
+  "usado": "si",
+  "texto_largo": "ALTA FRECUENCIA CA FASE 1",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.233",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.234",
+  "origen": "E_SE_FRC1",
+  "clave": 66
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20be0"
+  },
+  "nombreAlarma": "A_BF_CA1",
+  "usado": "si",
+  "texto_largo": "BAJA FRECUENCIA CA FASE 1",
+  "limite": 140,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.235",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.236",
+  "origen": "E_SE_FRC1",
+  "clave": 67
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20be1"
+  },
+  "nombreAlarma": "A_AC_CA1",
+  "usado": "si",
+  "texto_largo": "ALTA CORRIENTE CA FASE 1",
+  "limite": 100,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.237",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.238",
+  "origen": "E_SE_COR1",
+  "clave": 68
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20be2"
+  },
+  "nombreAlarma": "A_AV_CA2",
+  "usado": "no",
+  "texto_largo": "ALTO VOLTAJE CA FASE 2",
+  "limite": 62,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.239",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.240",
+  "origen": "E_SE_VCA2",
+  "clave": 69
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20be3"
+  },
+  "nombreAlarma": "A_BV_CA2",
+  "usado": "no",
+  "texto_largo": "BAJO VOLTAJE CA FASE 2",
+  "limite": 58,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.241",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.242",
+  "origen": "E_SE_VCA2",
+  "clave": 70
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20be4"
+  },
+  "nombreAlarma": "A_AF_CA2",
+  "usado": "no",
+  "texto_largo": "ALTA FRECUENCIA CA FASE 2",
+  "limite": 90,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.243",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.244",
+  "origen": "E_SE_FRC2",
+  "clave": 71
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20be5"
+  },
+  "nombreAlarma": "A_BF_CA2",
+  "usado": "no",
+  "texto_largo": "BAJA FRECUENCIA CA FASE 2",
+  "limite": 140,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.245",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.246",
+  "origen": "E_SE_FRC2",
+  "clave": 72
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20be6"
+  },
+  "nombreAlarma": "A_AC_CA2",
+  "usado": "no",
+  "texto_largo": "ALTA CORRIENTE CA FASE 2",
+  "limite": 100,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.247",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.248",
+  "origen": "E_SE_COR2",
+  "clave": 73
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20be7"
+  },
+  "nombreAlarma": "A_AV_CA3",
+  "usado": "no",
+  "texto_largo": "ALTO VOLTAJE CA FASE 3",
+  "limite": 62,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.249",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.250",
+  "origen": "E_SE_VCA3",
+  "clave": 74
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20be8"
+  },
+  "nombreAlarma": "A_BV_CA3",
+  "usado": "no",
+  "texto_largo": "BAJO VOLTAJE CA FASE 3",
+  "limite": 58,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.251",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.252",
+  "origen": "E_SE_VCA3",
+  "clave": 75
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20be9"
+  },
+  "nombreAlarma": "A_AF_CA3",
+  "usado": "no",
+  "texto_largo": "ALTA FRECUENCIA CA FASE 3",
+  "limite": 90,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.253",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.254",
+  "origen": "E_SE_FRC3",
+  "clave": 76
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bea"
+  },
+  "nombreAlarma": "A_BF_CA3",
+  "usado": "no",
+  "texto_largo": "BAJA FRECUENCIA CA FASE 3",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.255",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.256",
+  "origen": "E_SE_FRC3",
+  "clave": 77
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20beb"
+  },
+  "nombreAlarma": "A_AC_CA3",
+  "usado": "no",
+  "texto_largo": "ALTA CORRIENTE CA FASE 3",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.257",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.258",
+  "origen": "E_SE_COR3",
+  "clave": 78
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bec"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.259",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.260",
+  "origen": "Nan",
+  "clave": 79
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bed"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.261",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.262",
+  "origen": "Nan",
+  "clave": 80
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bee"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.263",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.264",
+  "origen": "Nan",
+  "clave": 81
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bef"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.265",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.266",
+  "origen": "Nan",
+  "clave": 82
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bf0"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.267",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.268",
+  "origen": "Nan",
+  "clave": 83
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bf1"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.269",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.270",
+  "origen": "Nan",
+  "clave": 84
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bf2"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.271",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.272",
+  "origen": "Nan",
+  "clave": 85
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bf3"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.273",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.274",
+  "origen": "Nan",
+  "clave": 86
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bf4"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.275",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.276",
+  "origen": "Nan",
+  "clave": 87
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bf5"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.277",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.278",
+  "origen": "Nan",
+  "clave": 88
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bf6"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.279",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.280",
+  "origen": "Nan",
+  "clave": 89
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bf7"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.281",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.282",
+  "origen": "Nan",
+  "clave": 90
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bf8"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.283",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.284",
+  "origen": "Nan",
+  "clave": 91
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bf9"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.285",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.286",
+  "origen": "Nan",
+  "clave": 92
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bfa"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.287",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.288",
+  "origen": "Nan",
+  "clave": 93
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bfb"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.289",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.290",
+  "origen": "Nan",
+  "clave": 94
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bfc"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.291",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.292",
+  "origen": "Nan",
+  "clave": 95
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bfd"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.293",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.294",
+  "origen": "Nan",
+  "clave": 96
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bfe"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.295",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.296",
+  "origen": "Nan",
+  "clave": 97
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20bff"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.297",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.298",
+  "origen": "Nan",
+  "clave": 98
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c00"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.299",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.300",
+  "origen": "Nan",
+  "clave": 99
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c01"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.301",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.302",
+  "origen": "Nan",
+  "clave": 100
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c02"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.303",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.304",
+  "origen": "Nan",
+  "clave": 101
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c03"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.305",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.306",
+  "origen": "Nan",
+  "clave": 102
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c04"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.307",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.308",
+  "origen": "Nan",
+  "clave": 103
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c05"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.309",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.310",
+  "origen": "Nan",
+  "clave": 104
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c06"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.311",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.312",
+  "origen": "Nan",
+  "clave": 105
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c07"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.313",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.314",
+  "origen": "Nan",
+  "clave": 106
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c08"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.315",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.316",
+  "origen": "Nan",
+  "clave": 107
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c09"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.317",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.318",
+  "origen": "Nan",
+  "clave": 108
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c0a"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.319",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.320",
+  "origen": "Nan",
+  "clave": 109
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c0b"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.321",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.322",
+  "origen": "Nan",
+  "clave": 110
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c0c"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.323",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.324",
+  "origen": "Nan",
+  "clave": 111
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c0d"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.325",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.326",
+  "origen": "Nan",
+  "clave": 112
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c0e"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.327",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.328",
+  "origen": "Nan",
+  "clave": 113
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c0f"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.329",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.330",
+  "origen": "Nan",
+  "clave": 114
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c10"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.331",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.332",
+  "origen": "Nan",
+  "clave": 115
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c11"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.333",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.334",
+  "origen": "Nan",
+  "clave": 116
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c12"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.335",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.336",
+  "origen": "Nan",
+  "clave": 117
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c13"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.337",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.338",
+  "origen": "Nan",
+  "clave": 118
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c14"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.339",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.340",
+  "origen": "Nan",
+  "clave": 119
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c15"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.341",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.342",
+  "origen": "Nan",
+  "clave": 120
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c16"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.343",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.344",
+  "origen": "Nan",
+  "clave": 121
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c17"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.345",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.346",
+  "origen": "Nan",
+  "clave": 122
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c18"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.347",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.348",
+  "origen": "Nan",
+  "clave": 123
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c19"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.349",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.350",
+  "origen": "Nan",
+  "clave": 124
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c1a"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.351",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.352",
+  "origen": "Nan",
+  "clave": 125
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c1b"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.353",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.354",
+  "origen": "Nan",
+  "clave": 126
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c1c"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.355",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.356",
+  "origen": "Nan",
+  "clave": 127
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c1d"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.357",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.358",
+  "origen": "Nan",
+  "clave": 128
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c1e"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.359",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.360",
+  "origen": "Nan",
+  "clave": 129
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c1f"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.361",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.362",
+  "origen": "Nan",
+  "clave": 130
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c20"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.363",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.364",
+  "origen": "Nan",
+  "clave": 131
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c21"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.365",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.366",
+  "origen": "Nan",
+  "clave": 132
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c22"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.367",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.368",
+  "origen": "Nan",
+  "clave": 133
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c23"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.369",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.370",
+  "origen": "Nan",
+  "clave": 134
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c24"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.371",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.372",
+  "origen": "Nan",
+  "clave": 135
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c25"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.373",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.374",
+  "origen": "Nan",
+  "clave": 136
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c26"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.375",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.376",
+  "origen": "Nan",
+  "clave": 137
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c27"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.377",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.378",
+  "origen": "Nan",
+  "clave": 138
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c28"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.379",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.380",
+  "origen": "Nan",
+  "clave": 139
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c29"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.381",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.382",
+  "origen": "Nan",
+  "clave": 140
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c2a"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.383",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.384",
+  "origen": "Nan",
+  "clave": 141
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c2b"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.385",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.386",
+  "origen": "Nan",
+  "clave": 142
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c2c"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.387",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.388",
+  "origen": "Nan",
+  "clave": 143
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c2d"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.389",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.390",
+  "origen": "Nan",
+  "clave": 144
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c2e"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.391",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.392",
+  "origen": "Nan",
+  "clave": 145
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c2f"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.393",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.394",
+  "origen": "Nan",
+  "clave": 146
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c30"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.395",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.396",
+  "origen": "Nan",
+  "clave": 147
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c31"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.397",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.398",
+  "origen": "Nan",
+  "clave": 148
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c32"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.399",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.400",
+  "origen": "Nan",
+  "clave": 149
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c33"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.401",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.402",
+  "origen": "Nan",
+  "clave": 150
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c34"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.403",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.404",
+  "origen": "Nan",
+  "clave": 151
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c35"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.405",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.406",
+  "origen": "Nan",
+  "clave": 152
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c36"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.407",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.408",
+  "origen": "Nan",
+  "clave": 153
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c37"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.409",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.410",
+  "origen": "Nan",
+  "clave": 154
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c38"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.411",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.412",
+  "origen": "Nan",
+  "clave": 155
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c39"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.413",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.414",
+  "origen": "Nan",
+  "clave": 156
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c3a"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.415",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.416",
+  "origen": "Nan",
+  "clave": 157
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c3b"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.417",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.418",
+  "origen": "Nan",
+  "clave": 158
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c3c"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.419",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.420",
+  "origen": "Nan",
+  "clave": 159
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c3d"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.421",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.422",
+  "origen": "Nan",
+  "clave": 160
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c3e"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.423",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.424",
+  "origen": "Nan",
+  "clave": 161
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c3f"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.425",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.426",
+  "origen": "Nan",
+  "clave": 162
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c40"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.427",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.428",
+  "origen": "Nan",
+  "clave": 163
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c41"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.429",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.430",
+  "origen": "Nan",
+  "clave": 164
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c42"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.431",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.432",
+  "origen": "Nan",
+  "clave": 165
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c43"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.433",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.434",
+  "origen": "Nan",
+  "clave": 166
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c44"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.435",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.436",
+  "origen": "Nan",
+  "clave": 167
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c45"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.437",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.438",
+  "origen": "Nan",
+  "clave": 168
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c46"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.439",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.440",
+  "origen": "Nan",
+  "clave": 169
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c47"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.441",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.442",
+  "origen": "Nan",
+  "clave": 170
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c48"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.443",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.444",
+  "origen": "Nan",
+  "clave": 171
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c49"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.445",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.446",
+  "origen": "Nan",
+  "clave": 172
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c4a"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.447",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.448",
+  "origen": "Nan",
+  "clave": 173
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c4b"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.449",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.450",
+  "origen": "Nan",
+  "clave": 174
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c4c"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.451",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.452",
+  "origen": "Nan",
+  "clave": 175
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c4d"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.453",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.454",
+  "origen": "Nan",
+  "clave": 176
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c4e"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.455",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.456",
+  "origen": "Nan",
+  "clave": 177
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c4f"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.457",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.458",
+  "origen": "Nan",
+  "clave": 178
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c50"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.459",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.460",
+  "origen": "Nan",
+  "clave": 179
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c51"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.461",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.462",
+  "origen": "Nan",
+  "clave": 180
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c52"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.463",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.464",
+  "origen": "Nan",
+  "clave": 181
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c53"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.465",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.466",
+  "origen": "Nan",
+  "clave": 182
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c54"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.467",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.468",
+  "origen": "Nan",
+  "clave": 183
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c55"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.469",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.470",
+  "origen": "Nan",
+  "clave": 184
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c56"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.471",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.472",
+  "origen": "Nan",
+  "clave": 185
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c57"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.473",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.474",
+  "origen": "Nan",
+  "clave": 186
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c58"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.475",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.476",
+  "origen": "Nan",
+  "clave": 187
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c59"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.477",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.478",
+  "origen": "Nan",
+  "clave": 188
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c5a"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.479",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.480",
+  "origen": "Nan",
+  "clave": 189
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c5b"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.481",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.482",
+  "origen": "Nan",
+  "clave": 190
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c5c"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.483",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.484",
+  "origen": "Nan",
+  "clave": 191
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c5d"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.485",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.486",
+  "origen": "Nan",
+  "clave": 192
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c5e"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.487",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.488",
+  "origen": "Nan",
+  "clave": 193
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c5f"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.489",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.490",
+  "origen": "Nan",
+  "clave": 194
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c60"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.491",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.492",
+  "origen": "Nan",
+  "clave": 195
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c61"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.493",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.494",
+  "origen": "Nan",
+  "clave": 196
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c62"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.495",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.496",
+  "origen": "Nan",
+  "clave": 197
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c63"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.497",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.498",
+  "origen": "Nan",
+  "clave": 198
+},{
+  "_id": {
+    "$oid": "64586d7909d9448a69a20c64"
+  },
+  "nombreAlarma": "TBD",
+  "usado": "no",
+  "texto_largo": "TEXT",
+  "limite": 250,
+  "logica": "NC",
+  "oid_set": "1.3.6.1.4.1.19407.2.2.2.499",
+  "oid_clear": "1.3.6.1.4.1.19407.2.2.2.500",
+  "origen": "Nan",
+  "clave": 199
+}]

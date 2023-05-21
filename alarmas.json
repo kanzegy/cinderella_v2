@@ -1,0 +1,226 @@
+[{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efa4"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "1",
+  "epgLabel": "E_SE_PTA1",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efa7"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "2",
+  "epgLabel": "E_SE_IMP1",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efaa"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "3",
+  "epgLabel": "E_DET_MVT1",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efad"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "4",
+  "epgLabel": "E_DET_HMO",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efb0"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "5",
+  "epgLabel": "E_ALM_EXT",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efb3"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "6",
+  "epgLabel": "E_DES_EXT",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efb6"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "7",
+  "epgLabel": "E_VES_FAL",
+  "convVolts": "1000",
+  "offset": "0.8",
+  "slope": "0.03",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efb9"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "8",
+  "epgLabel": "E_VES_DTP",
+  "convVolts": "1000",
+  "offset": "0",
+  "slope": "0.01",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efbc"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "9",
+  "epgLabel": "E_VES_INC",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efbf"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "10",
+  "epgLabel": "E_AEX_AA1",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efc2"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "11",
+  "epgLabel": "E_AEX_AA2",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efc5"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "12",
+  "epgLabel": "E_AEX_AA3",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "si"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efc8"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "13",
+  "epgLabel": "E_AEX_AA4",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "no"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efcb"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "14",
+  "epgLabel": "E_S_TMPE1",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "no"
+},{
+  "_id": {
+    "$oid": "645866e62217adfa2bf9efce"
+  },
+  "tarjeta_id": {
+    "$oid": "645866e62217adfa2bf9efa1"
+  },
+  "epgID": "15",
+  "epgLabel": "E_S_TMPE2",
+  "convVolts": "10",
+  "offset": "0",
+  "slope": "1",
+  "tipo": "DIG",
+  "unidad": "V",
+  "usado": "no"
+}]
