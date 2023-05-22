@@ -9,7 +9,7 @@
   <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
   <style>
-    input {
+    input,select {
     background-color: #caecff !important;
 }
   </style>
@@ -44,16 +44,20 @@
 </nav>
 <body>
   <h1>Agregar Tarjeta</h1>
-<form action="{{ url_for('GuardaTarjeta') }}" method="post">
+<form action="{{ url_for('GuardaTarjeta') }}" method="post" class=" col-lg-10 col-xl-6">
     <input type="hidden" name="_id" value="0">
     <div class="form-group row">
-      <div class="col-6">
+      <div class="col-4">
         <label for="alias">Alias:</label>
         <input type="text" class="form-control" id="alias"  name="alias" placeholder="Ingresa el alias" required>
       </div>
-      <div class="col-6">
+      <div class="col-4">
         <label for="alias">Codigo #:</label>
         <input type="text" class="form-control" id="codigo"  name="codigo" placeholder="Ingresa el codigo que se enviara por el puerto serial" required>
+      </div>
+      <div class="col-4">
+        <label for="nombrePuerto">Puertos encontrados:</label>
+        <select class="form-select" id="nombrePuerto"  name="nombrePuerto"></select>
       </div>
     </div>
 
@@ -85,9 +89,11 @@
         <tr>
         </tbody>
       </table>
-      
-      <button type="button" id="agregar-fila">Agregar Alarma</button>
-      <button type="submit" class="btn btn-primary">Guardar</button>
+
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary" id="agregar-fila">Agregar alarma</button>
+        <button type="submit" class="btn btn-success">Guardar</button>
+      </div>
   </div>
   
   </form>
@@ -104,6 +110,7 @@
             '<td><input type="number" class="form-control" id="slope" name="alarmas[slope]" placeholder="Ingresa slope" value="1" required></td>' +
             '<td><input type="text" class="form-control" id="tipo" name="alarmas[tipo]" placeholder="Ingresa tipo" value="DIG" required></td>' +
             '<td><input type="text" class="form-control" id="unidad" name="alarmas[unidad]" placeholder="Ingresa unidad" value="V" required></td>' +
+            '<td><button type="button" class="btn btn-danger btn-sm" onclick="$(this).parent().parent().remove()">X</td>' +
             '</tr>';
 
         $('table tbody').append(nuevaFila);
@@ -113,6 +120,14 @@
       });
 
       addNewRow();
+
+      var puertos = JSON.parse('{{puertos}}'.replaceAll("&#39;", '"'));
+
+      puertos.forEach(function(item){
+        var option = $("<option>").val(item).text(item);
+        $("#nombrePuerto").append(option);
+      });
+
     });
   </script>
 </body>

@@ -8,6 +8,7 @@ from py.classes.alarmasconfig import AlarmaConfig
 from py.classes.conexionPuertoSerial import ConexionTarjeta
 from pymongo import MongoClient
 from bson import ObjectId
+import serial.tools.list_ports
 import threading
 import time
 
@@ -98,7 +99,13 @@ def guardaConfAlarma():
 #vistas ================================================================================
 @app.route("/AgregarTarjeta")
 def AgregarTarjeta():
-    return render_template("configuracionTarjeta.html")
+    
+    result = []
+    puertos_disponibles = serial.tools.list_ports.comports()
+    for puerto in puertos_disponibles:
+        result.append(puerto.device)
+
+    return render_template("configuracionTarjeta.html", puertos =  result)
     
 @app.route("/configAlarmas")
 def configAlarmas():

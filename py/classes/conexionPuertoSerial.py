@@ -17,7 +17,7 @@ class ConexionTarjeta():
     
     def obtenerDatosDeTarjetaFisica(self):
 
-        serialMicro = serial.Serial('COM4',9600, timeout=1)  #establece la comunicación por el puerto serial
+        serialMicro = serial.Serial(self.tarjetaDb["nombrePuerto"],9600, timeout=1)  #establece la comunicación por el puerto serial
         time.sleep(.2)
 
         serialMicro.write(self.codigo.encode("ascii")) 
@@ -32,7 +32,7 @@ class ConexionTarjeta():
         result = {
             "status": "OK",
             "limite_NA" : False,
-            "limite_NC" : False
+            "limite_NC" : Falseself.tarjetaDb["nombrePuerto"]
         }
         if logica == 'NA'and valor > limite:
             result["limite_NA"] = True

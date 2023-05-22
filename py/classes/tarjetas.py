@@ -11,11 +11,11 @@ class Tarjeta(Parent):
     def genericInit(self):
         super().__init__("cinderella", "tarjetas")
         self.dbKeys = {
-            "inputsConvert" : ["alias", "codigo"],
+            "inputsConvert" : ["alias", "codigo", "nombrePuerto"],
             "arrays" : ["trapsIp"],
             "objects" : [{"name": "alarmas", "values": ["epgID", "usada", "epgLabel", "convVolts", "offset", "slope", "tipo", "unidad"]}],
-            "inputsInsertDb" : ["alias", "codigo","trapsIp"],
-            "inputsSelectDb" : ["_id", "alias", "codigo","trapsIp"],
+            "inputsInsertDb" : ["alias", "codigo","trapsIp", "nombrePuerto"],
+            "inputsSelectDb" : ["_id", "alias", "codigo","trapsIp", "nombrePuerto"],
             "ObjectIds": ["_id"]
         }
         

@@ -4,6 +4,7 @@
   },
   "alias": "tarjeta1",
   "codigo": "#200",
+  "nombrePuerto": "COM4",
   "trapsIp": [
     "100.124.64.237",
     "10.128.41.5",
