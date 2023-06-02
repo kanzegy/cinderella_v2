@@ -28,7 +28,7 @@ def ejecutar_cada_5_segundos():
         socketio.emit("listenerData", result)   
         time.sleep(5)
 
-# threading.Thread(target=ejecutar_cada_5_segundos).start()
+threading.Thread(target=ejecutar_cada_5_segundos).start()
 
 
 
@@ -64,8 +64,7 @@ def simpleChat():
 
 @app.route("/")
 def inicio():
-    result = obtenerDatosDeTarjetasYConexiones()    
-    return render_template("Conexiones.html", TarjetaData = result)
+    return redirect("/s_tarjeta200", code=302)
 
 # #Conexion Puerto Serial ===============================================================
 @app.get("/ObtenerDatosDeTarjetas")
@@ -118,20 +117,26 @@ def Conexiones():
     result = obtenerDatosDeTarjetasYConexiones()    
     return render_template("Conexiones.html", TarjetaData = result)
 
+@app.route("/s_tarjeta200")
+def s_tarjeta200():
+    result = obtenerDatosDeTarjetasYConexiones()  
+    return render_template("simple_tarjeta200.html", TarjetaData = result)
+
+
 def obtenerDatosDeTarjetasYConexiones():
     result = []
     alObj = Alarma()
     taObj = Tarjeta()
 
-    # tarjetas = taObj.obtenerColeccion({})
+    tarjetas = taObj.obtenerColeccion({})
 
-    # for tarjeta in tarjetas:
-    #     conexionObj = ConexionTarjeta(tarjeta["codigo"])
-    #     conexionObj.obtenerDatosDeTarjetaFisica()
-    #     res = conexionObj.chequeoDeAlarmas()
-    #     tarjeta["alarmas"] = alObj.obtenerColeccion({"tarjeta_id" : ObjectId(tarjeta["_id"])})
-    #     res["tarjeta"] = tarjeta
-    #     result.append(res)
+    for tarjeta in tarjetas:
+        conexionObj = ConexionTarjeta(tarjeta["codigo"])
+        conexionObj.obtenerDatosDeTarjetaFisica()
+        res = conexionObj.chequeoDeAlarmas()
+        tarjeta["alarmas"] = alObj.obtenerColeccion({"tarjeta_id" : ObjectId(tarjeta["_id"])})
+        res["tarjeta"] = tarjeta
+        result.append(res)
 
     return result
 

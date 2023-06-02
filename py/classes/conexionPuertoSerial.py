@@ -3,7 +3,9 @@ from pysnmp.hlapi import *
 from py.classes.dbController import dbController
 from py.classes.alarmas import Alarma
 from bson.timestamp import Timestamp
+from datetime import datetime
 import datetime as dt
+
 
 
 class ConexionTarjeta():
@@ -15,8 +17,12 @@ class ConexionTarjeta():
         self.lineaDatos = 0
 
     
-    def obtenerDatosDeTarjetaFisica(self):
+    def obtenerDatosDeTarjetaFisica(self, conexion_real = False):
 
+        if conexion_real == False:
+            self.lineaDatos = ["121", "32", "73", "64", "55", "76","74", "86", "49","104","101","112"]
+            return
+            
         serialMicro = serial.Serial(self.tarjetaDb["nombrePuerto"],9600, timeout=1)  #establece la comunicación por el puerto serial
         time.sleep(.2)
 
@@ -27,12 +33,13 @@ class ConexionTarjeta():
             self.lineaDatos = serialMicro.readline().decode("ascii", errors="ignore")
             self.lineaDatos = self.lineaDatos.split(',')  # convierte la entrada en lista
         time.sleep(.1)
+        
 
     def cumpleCondiciones(self, limite, logica, valor):
         result = {
             "status": "OK",
             "limite_NA" : False,
-            "limite_NC" : Falseself.tarjetaDb["nombrePuerto"]
+            "limite_NC" : False
         }
         if logica == 'NA'and valor > limite:
             result["limite_NA"] = True
@@ -80,7 +87,7 @@ class ConexionTarjeta():
                             "alarmaReg":alarma_conf["nombreAlarma"],
                             "estatusRegistro":statusActual,
                             "texto_largo": alarma_conf["texto_largo"],
-                            "horaReg": Timestamp(int(dt.datetime.today().timestamp()), 1)
+                            "horaReg": datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
                         }
                         result["Alertas"].append(objInsert)
                         db["registro_alarmas"].insert_one(objInsert)

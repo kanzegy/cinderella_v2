@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static', filename='js/jquery-v3.6.4.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/socket.io.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/chart.js') }}"></script>      
+    <title>Datos</title>
+  </head>
+
+  <style>
+    .bodybody{
+      font-size: small;
+    }
+  </style>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cinderella v2.1 - Entradas (#200)</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tarjetas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Entradas (#200)</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item disabled" href="#">En Construcción (#---)</a></li>
+                  <li><a class="dropdown-item disabled" href="#">En Construcción (#---)</a></li>
+                  <li><a class="dropdown-item disabled" href="#">En Construcción (#---)</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Notificaciones <button id="alertas-contador" class="btn btn-danger btn-sm" style="display:none;"></button>
+                </a>
+                <ul class="dropdown-menu" id="menu-notificaciones">
+                    <li class="text-center">-</li>
+                    <li><table class="dropdown-item" id="tabla-alertas"><tbody></tbody></table></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+    <div class="bodybody p-2">
+        <div class="row">
+            <div class="col-xl-6 col-md-12" id="tablas-container">
+            </div>
+            <div class="col-xl-6 col-md-12" id="graph-container">
+                <canvas id="graph-canvas"></canvas>
+            </div>
+        </div>
+
+        <div id="templateTable" style="display: none;">
+        <div class="card text-white border-light">
+        <div class="card-body">
+        <h5 class="card-title text-center"></h5>
+        <div class="tabla-container">
+        <table class='table table-hover table-striped table-dark'>
+        <thead>
+        <tr>
+        <th>EPG LABEL</th>
+        <th>NOMBRE ALARMA</th>
+        <th>VALOR</th>
+        <th>UNIDAD</th>
+        <th>ACCIONES</th>
+        </tr>
+        </thead>
+        <tbody class="registrosTarjeta">
+        </tbody>
+        </table>
+        </div>
+        <!-- <a href="#" class="btn btn-primary btn-sm">Configurar Tarjeta</a> -->
+        </div>
+        </div>
+        </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  var ContadorAlertas = 0;
+  function cambiaContadorAlertas(operacion){
+    ContadorAlertas = ContadorAlertas + operacion;
+    $("#alertas-contador").html(ContadorAlertas);
+    $("#alertas-contador").css("display",(ContadorAlertas == 0 ? "none" : "" ));
+
+  }
+  function AddAlert(Alerta, tarjeta, tarjeTabla){
+    var goTable ="<a class='btn border-danger btn-sm' href='#" + tarjeta._id + "_"+Alerta.alarmaReg+"'>Ir</a>";
+    var html = "<tr><td>"+Alerta.alarmaReg+"</td><td>"+Alerta.estatusRegistro+"</td><td>"+tarjeTabla+"</td><td>"+Alerta.horaReg+"</td><td>"+ goTable +"</td></tr>";
+    $("#tabla-alertas").find("tbody").append(html);
+    cambiaContadorAlertas(1);
+  }
+
+    function elementGenerator(tag, classes, id, name, appneds){
+        var _tag = $(document.createElement(tag));
+
+        if(classes != undefined)
+            _tag.addClass(classes);
+        
+        if(id != undefined)
+            _tag.attr("id", id);
+        
+        if(name != undefined)
+            _tag.attr("name", name);
+
+        if(appneds != undefined){
+            appneds.forEach(function(obj, idx){ 
+                _tag.append(obj);
+            });
+        }
+
+        return _tag;
+    }
+
+    function creteTables(conexiones){
+      conexiones.forEach(function(itemConex, idx){
+        var tituloTabla = itemConex["tarjeta"]["alias"] + " (" + itemConex.tarjeta.codigo + ")";
+        var tableHtml = "";
+        var template = elementGenerator("div",null,null,null,[$("#templateTable").html()]);
+        template.css("padding-bottom", "24px");
+
+        itemConex.infoAlarmas.forEach(function(itemAlar){
+          tableHtml += "<tr id='"+itemConex["tarjeta"]["_id"]+"_"+itemAlar["epgLabel"]+"'><td>" + itemAlar["epgLabel"] + "</td><td>" + itemAlar["texto_largo"] + "</td><td>" + itemAlar["valor"] + "</td><td>" + itemAlar["unidad"] + "</td><td><button class='btn btn-sm btn-primary'>Ver grafica</button></td></tr>";
+        });
+
+        itemConex.Alertas.forEach(function(itemAlert){
+          AddAlert(itemAlert, itemConex["tarjeta"], tituloTabla);
+        });
+
+        if(conexiones != ""){
+          template.find("table").attr("id", itemConex["tarjeta"]["_id"]);
+          template.find(".card-title").append(tituloTabla);
+          template.find(".registrosTarjeta").append(tableHtml);
+          $("#tablas-container").append(template);
+        }
+        
+
+      });
+    }
+
+    var conexiones = JSON.parse('{{TarjetaData}}'.replaceAll("&#39;", '"').replace(/^ObjectId\("(.*)"\)$/, '$1'));
+    creteTables(conexiones);
+    // var conexiones = [{"infoAlarmas":[{"epgLabel":"E_SE_PTA1","valor":1.1,"unidad":"V","texto_largo":"PUERTA ABIERTA 1"},{"epgLabel":"E_SE_IMP1","valor":1.2,"unidad":"V","texto_largo":"DET IMPACTO 1"},{"epgLabel":"E_DET_MVT1","valor":1.3,"unidad":"V","texto_largo":"DET DE MOVIMIENTO 1"},{"epgLabel":"E_DET_HMO","valor":1.4,"unidad":"V","texto_largo":"DET DE INCENDIO"},{"epgLabel":"E_ALM_EXT","valor":1.5,"unidad":"V","texto_largo":"FALLA EN SIST EXTINCION"},{"epgLabel":"E_DES_EXT","valor":1.6,"unidad":"V","texto_largo":"DESGARGA AGENTE EXT"},{"epgLabel":"E_VES_FAL","valor":-26.1,"unidad":"V","texto_largo":"FALLA SIST VESDA"},{"epgLabel":"E_VES_DTP","valor":1.7999999999999998,"unidad":"V","texto_largo":"DET PARTICULAS VESDA"},{"epgLabel":"E_VES_INC","valor":1.9,"unidad":"V","texto_largo":"DET INCENDIO VESDA"},{"epgLabel":"E_AEX_AA1","valor":2,"unidad":"V","texto_largo":"FALLA AA1"},{"epgLabel":"E_AEX_AA2","valor":2.1,"unidad":"V","texto_largo":"FALLA AA2"},{"epgLabel":"E_AEX_AA3","valor":2.2,"unidad":"V","texto_largo":"FALLA AA3"}],"Alertas":[{"tarjeta":"tajeta 1 (#200)","clave":0,"alarmaReg":"E_VES_FAL","estatusRegistro":"ACTIVA","texto_largo":"PUERTA ABIERTA 1","horaReg":"2023-05-12T18:42:19.380Z"},{"tarjeta":"tajeta 1 (#200)","clave":0,"alarmaReg":"E_VES_FAL","estatusRegistro":"ACTIVA","texto_largo":"PUERTA ABIERTA 1","horaReg":"2023-05-12T18:42:19.380Z"}],"tarjeta":{"_id":"t11111","alias":"tarjeta1","codigo":"#200","trapsIp":["100.124.64.237","10.128.41.5","",""],"alarmas":[{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efa4","epgID":"1","epgLabel":"E_SE_PTA1","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efa7","epgID":"2","epgLabel":"E_SE_IMP1","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efaa","epgID":"3","epgLabel":"E_DET_MVT1","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efad","epgID":"4","epgLabel":"E_DET_HMO","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efb0","epgID":"5","epgLabel":"E_ALM_EXT","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efb3","epgID":"6","epgLabel":"E_DES_EXT","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efb6","epgID":"7","epgLabel":"E_VES_FAL","convVolts":"1000","offset":"0.8","slope":"0.03","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efb9","epgID":"8","epgLabel":"E_VES_DTP","convVolts":"1000","offset":"0","slope":"0.01","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efbc","epgID":"9","epgLabel":"E_VES_INC","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efbf","epgID":"10","epgLabel":"E_AEX_AA1","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efc2","epgID":"11","epgLabel":"E_AEX_AA2","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efc5","epgID":"12","epgLabel":"E_AEX_AA3","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efc8","epgID":"13","epgLabel":"E_AEX_AA4","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efcb","epgID":"14","epgLabel":"E_S_TMPE1","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"},{"tarjeta_id":"645866e62217adfa2bf9efa1","_id":"645866e62217adfa2bf9efce","epgID":"15","epgLabel":"E_S_TMPE2","convVolts":"10","offset":"0","slope":"1","tipo":"DIG","unidad":"V"}]}}];
+
+  $(document).ready(function(){
+    var socket = io.connect("ws://localhost:5000");
+      
+      socket.on("connect", function(){
+        socket.send("User connected!");
+      });
+
+      socket.on("listenerData", function(data){
+        console.log(data);
+        creteTables(data);
+      });
+
+    const ctx = document.getElementById('graph-canvas');
+
+    new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["10:45:04","10:45:09","10:45:14","10:45:19","10:45:24","10:45:29","10:45:34","10:45:39","10:45:44","10:45:49","10:45:54","10:45:59","10:46:04","10:46:09","10:46:14","10:46:19","10:46:24","10:46:29","10:46:34","10:46:39","10:46:44","10:46:49","10:46:54","10:46:59","10:47:04","10:47:09","10:47:14","10:47:19","10:47:24","10:47:29","10:47:34","10:47:39","10:47:44","10:47:49","10:47:54","10:47:59","10:48:04","10:48:09","10:48:14","10:48:19","10:48:24","10:48:29","10:48:34","10:48:39","10:48:44","10:48:49","10:48:54","10:48:59","10:49:04","10:49:09","10:49:14","10:49:19","10:49:24","10:49:29","10:49:34","10:49:39","10:49:44","10:49:49","10:49:54","10:49:59","10:50:04","10:50:09","10:50:14","10:50:19","10:50:24","10:50:29","10:50:34","10:50:39","10:50:44","10:50:49","10:50:54","10:50:59","10:51:04","10:51:09","10:51:14","10:51:19","10:51:24","10:51:29","10:51:34","10:51:39","10:51:44","10:51:49","10:51:54","10:51:59","10:52:04","10:52:09","10:52:14","10:52:19","10:52:24","10:52:29","10:52:34","10:52:39","10:52:44","10:52:49","10:52:54","10:52:59","10:53:04","10:53:09","10:53:14","10:53:19"],
+        datasets: [{
+        label: 'DET DE INCENDIO',
+        data: [82, 39, 100, 77, 45, 25, 24, 94, 71, 75, 5, 28, 60, 35, 50, 85, 16, 66, 96, 36, 53, 97, 88, 2, 64, 94, 95, 30, 37, 47, 56, 78, 77, 49, 67, 65, 46, 78, 79, 94, 93, 38, 38, 5, 67, 26, 89, 18, 64, 64, 4, 3, 35, 37, 74, 91, 36, 43, 25, 57, 54, 37, 88, 91, 14, 67, 61, 31, 16, 44, 60, 57, 78, 72, 21, 6, 58, 45, 36, 51, 81, 3, 31, 43, 78, 64, 97, 84, 20, 29, 8, 17, 25, 23, 16, 30, 79, 35, 85, 63],
+        borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+        y: {
+            beginAtZero: true
+        }
+        }
+    }
+    });
+  })
+</script>
+
+</body>
+</html>
